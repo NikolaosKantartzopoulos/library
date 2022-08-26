@@ -1,0 +1,44 @@
+--main-white: #111111;
+
+
+*{border-radius: 0.5vw;}
+table, td, th, tr {border: 1px solid black;  border-radius: 0.5vw;}
+th{color: white}
+th,td{width: 5rem; text-align: center; padding: 0.3rem; }
+td:first-child {text-align: start;}
+th:first-child {width: 9rem}
+tr{height:1em; background-color: IndianRed}
+label{margin: auto 10px auto 20px}
+table, button {box-shadow: 10px 5px 5px #888888; }
+main{box-shadow: 10px 5px 5px var(--main-white); }
+
+button{background-color: CornflowerBlue; font-size: 1.2rem; margin: 5px; color: white; font-weight: bold; cursor:pointer;}
+
+
+main{
+	padding: 5px 15px;
+	width: clamp(600, 80vw,1000px);
+	height: max(100px, 85vh);
+	background-color: rgba(230,230,230,0.8);
+	display: flex; flex-flow: column wrap; justify-content: start; align-items: center;
+}
+form button{grid-column:1 / 5}
+#ui_menu{display:grid; grid-template-columns: 1fr;}
+#library_table{
+	grid-columns: 1/span 2
+}
+
+body,
+html {
+  height: 100%;
+  padding: min(3vh, 5vw);
+  overflow: hidden;
+}
+.background {
+  background-image: url("https://media.gettyimages.com/photos/books-on-display-in-the-corner-of-a-second-hand-bookstore-picture-id1129874863?k=20&m=1129874863&s=612x612&w=0&h=FIL5hSudy89ghOg-LUz0neEokerGQreoRfe3DYFq6E0=");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
